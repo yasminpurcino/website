@@ -59,7 +59,7 @@ button {
   .menu ul {
     list-style: none;
      margin: 8px;
-    padding: 0
+    padding-left: 0
   }
   .menu li {
     display: inline-block;
@@ -102,8 +102,10 @@ button {
 
     .dropplist {
         display: none;
-        display: block;
+        position: absolute; top: 0; left: 0; padding-top: 25px;
     }
+    .dropplist li { display: block; }
 
+    .menu .has-dropplist { position: relative; }
     .menu .has-dropplist:hover .dropplist{ display:block; }
   
